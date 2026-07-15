@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sports India - Cricket</title>
+
+<style>
+
+body{
+    font-family:Arial,sans-serif;
+    margin:0;
+    background:#f4f4f4;
+}
+
+header{
+    background:#0b4f8c;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background-color:#fff799;
+    padding:15px 30px;
+}
+
+.nav-links{
+    display:flex;
+    gap:30px;
+}
+.container{
+    width:90%;
+    margin:auto;
+    padding:20px;
+}
+
+.team{
+    background:white;
+    padding:20px;
+    margin-bottom:25px;
+    border-radius:10px;
+    box-shadow:0 2px 10px rgba(0,0,0,.2);
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:15px;
+}
+
+th{
+    background:#0b4f8c;
+    color:white;
+}
+
+th,td{
+    border:1px solid #ddd;
+    padding:10px;
+    text-align:center;
+}
+
+.button{
+    display:inline-block;
+    background:#0b4f8c;
+    color:white;
+    padding:10px 20px;
+    text-decoration:none;
+    border-radius:5px;
+    margin-top:20px;
+}
+
+.button:hover{
+    background:#08345d;
+}
+/* Reset */
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+img{max-width:100%;height:auto;}
+
+/* Navbar */
+.navbar{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;padding:15px 20px;}
+.logo{font-size:28px;font-weight:bold;color:#8B0000;}
+.nav-links{display:flex;flex-wrap:wrap;justify-content:center;gap:15px;list-style:none;}
+.nav-links a{text-decoration:none;color:#000;padding:10px 15px;border-radius:6px;font-weight:bold;transition:.3s;}
+.nav-links a:hover{background:#8B0000;color:#fff;}
+
+/* Layout */
+header{padding:40px 20px;}
+header h1{font-size:40px;}
+header p{font-size:20px;}
+.container{width:90%;max-width:1200px;margin:auto;}
+.team{padding:20px;margin:25px 0;}
+.team h2{font-size:30px;}
+table{width:100%;display:block;overflow-x:auto;white-space:nowrap;}
+.button{display:inline-block;margin:25px 0;}
+
+/* Tablet */
+@media(max-width:992px){
+header h1{font-size:34px;}
+.team h2{font-size:26px;}
+.nav-links{gap:10px;}
+.nav-links a{padding:8px 12px;}
+}
+
+/* Mobile */
+@media(max-width:768px){
+.navbar{flex-direction:column;text-align:center;}
+.logo{margin-bottom:15px;}
+.nav-links{flex-direction:column;width:100%;}
+.nav-links li,.nav-links a,.button{width:100%;}
+.nav-links a{display:block;}
+header h1{font-size:28px;}
+header p{font-size:16px;}
+.team{padding:25px;}
+.team h2{font-size:25px;}
+table{font-size:25px;}
+.button{text-align:center;}
+}
+
+/* Small Phones */
+@media(max-width:480px){
+.logo{font-size:22px;}
+header h1{font-size:24px;}
+header p{font-size:14px;}
+.team h2{font-size:20px;}
+table{font-size:25px;}
+th,td{padding:8px;}
+}
+
+</style>
+
+</head>
+
+<body>
+<nav class="navbar">
+    <div class="logo">🏆 Sports India</div>
+
+    <ul class="nav-links">
+        <li><a href="sports.html">Home</a></li>
+        <li><a href="cricket.html">Cricket</a></li>
+        <li><a href="football.html">Football</a></li>
+        <li><a href="kabaddi.html">Kabaddi</a></li>
+        <li><a href="hockey.html">Hockey</a></li>
+        <li><a href="tennis.html">Tennis</a></li>
+		<li><a href="volleyball.html">Volleyball</a></li>
+		<li><a href="chess.html">Chess</a></li>
+		<li><a href="basketball.html">Basketball</a></li>
+		<li><a href="tabletennis.html">Table Tennis</a></li>
+		<li><a href="athletics.html">Athletics</a></li>
+		<li><a href="badminton.html">Badminton</a></li>
+		<li><a href="boxing.html">Boxing</a></li>
+    </ul>
+</nav>
+
+<header>
+
+<h1>🏏 Indian Premier League (IPL)</h1>
+
+<p>Top IPL Teams & Players</p>
+
+</header>
+
+<div class="container">
+
+<div class="team">
+
+<h2>🦁 Chennai Super Kings (CSK)</h2>
+
+<p><b>Captain:</b> MS Dhoni</p>
+<p><b>IPL Titles:</b> 5</p>
+<p><b>Home Ground:</b> M. A. Chidambaram Stadium</p>
+
+<table>
+
+<tr>
+<th>Player</th>
+<th>Role</th>
+<th>Matches</th>
+<th>Runs</th>
+<th>Wickets</th>
+</tr>
+
+<tr>
+<td>MS Dhoni</td>
+<td>Wicket Keeper</td>
+<td>278</td>
+<td>5400+</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>Ruturaj Gaikwad</td>
+<td>Batter</td>
+<td>70+</td>
+<td>2500+</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>Ravindra Jadeja</td>
+<td>All-rounder</td>
+<td>250+</td>
+<td>3200+</td>
+<td>170+</td>
+</tr>
+
+</table>
+
+</div>
+
+<div class="team">
+
+<h2>🔵 Mumbai Indians (MI)</h2>
+
+<p><b>Captain:</b> Hardik Pandya</p>
+<p><b>IPL Titles:</b> 5</p>
+<p><b>Home Ground:</b> Wankhede Stadium</p>
+
+<table>
+
+<tr>
+<th>Player</th>
+<th>Role</th>
+<th>Matches</th>
+<th>Runs</th>
+<th>Wickets</th>
+</tr>
+
+<tr>
+<td>Rohit Sharma</td>
+<td>Batter</td>
+<td>270+</td>
+<td>6900+</td>
+<td>15</td>
+</tr>
+
+<tr>
+<td>Hardik Pandya</td>
+<td>All-rounder</td>
+<td>150+</td>
+<td>2600+</td>
+<td>65+</td>
+</tr>
+
+<tr>
+<td>Jasprit Bumrah</td>
+<td>Bowler</td>
+<td>140+</td>
+<td>80</td>
+<td>180+</td>
+</tr>
+
+</table>
+
+</div>
+
+<div class="team">
+
+<h2>🔴 Royal Challengers Bengaluru (RCB)</h2>
+
+<p><b>Captain:</b> Rajat Patidar</p>
+<p><b>IPL Titles:</b> 2</p>
+<p><b>Home Ground:</b> M. Chinnaswamy Stadium</p>
+
+<table>
+
+<tr>
+<th>Player</th>
+<th>Role</th>
+<th>Matches</th>
+<th>Runs</th>
+<th>Wickets</th>
+</tr>
+
+<tr>
+<td>Virat Kohli</td>
+<td>Batter</td>
+<td>270+</td>
+<td>8500+</td>
+<td>5</td>
+</tr>
+
+<tr>
+<td>Rajat Patidar</td>
+<td>Batter</td>
+<td>35+</td>
+<td>900+</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>Josh Hazlewood</td>
+<td>Bowler</td>
+<td>45+</td>
+<td>20</td>
+<td>65+</td>
+</tr>
+
+</table>
+
+</div>
+
+<a href="sports.html" class="button">⬅ Back to Home</a>
+
+</div>
+
+</body>
+</html>

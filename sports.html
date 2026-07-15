@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sports India</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#f5f5f5;
+}
+html{
+scroll-behavior:smooth;
+}
+
+/* Header */
+
+header{
+background:#0b4f8c;
+color:white;
+height:60px;
+display:flex;
+align-items:center;
+padding:0 20px;
+
+position:sticky;
+top:0;
+z-index:999;
+box-shadow:0 2px 10px rgba(0,0,0,.3);
+}
+
+.menu-btn{
+font-size:30px;
+cursor:pointer;
+margin-right:20px;
+}
+
+.logo{
+font-size:24px;
+font-weight:bold;
+}
+
+/* Side Menu */
+
+.sidebar{
+height:100%;
+width:0;
+position:fixed;
+top:0;
+left:0;
+background:#111;
+overflow-x:hidden;
+transition:.4s;
+padding-top:60px;
+z-index:1000;
+}
+
+.sidebar a{
+display:block;
+color:white;
+padding:15px 25px;
+text-decoration:none;
+font-size:18px;
+transition:.3s;
+}
+
+.sidebar a:hover{
+background:#0b4f8c;
+}
+
+.closebtn{
+position:absolute;
+top:10px;
+right:20px;
+font-size:35px;
+cursor:pointer;
+}
+
+/* Hero */
+
+.hero{
+height:400px;
+background:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),
+url("https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?auto=format&fit=crop&w=1400&q=80");
+background-size:cover;
+background-position:center;
+display:flex;
+justify-content:center;
+align-items:center;
+color:white;
+text-align:center;
+}
+
+.hero h1{
+font-size:50px;
+}
+
+.hero p{
+font-size:20px;
+margin-top:15px;
+}
+
+/* Sports Cards */
+
+.container{
+padding:40px;
+}
+
+.title{
+text-align:center;
+font-size:35px;
+margin-bottom:30px;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+}
+
+.card{
+background:white;
+border-radius:15px;
+padding:25px;
+text-align:center;
+box-shadow:0 5px 15px rgba(0,0,0,.2);
+cursor:pointer;
+transition:all .4s ease;
+animation:fadeIn .8s ease;
+}
+
+.card:hover{
+transform:translateY(-12px) scale(1.03);
+box-shadow:0 20px 35px rgba(0,0,0,.3);
+}
+
+.card h2{
+color:#0b4f8c;
+margin-bottom:10px;
+}
+
+footer{
+background:#0b4f8c;
+color:white;
+text-align:center;
+padding:15px;
+margin-top:40px;
+}
+.search-box{
+
+margin-left:auto;
+
+}
+
+.search-box input{
+
+padding:10px 18px;
+
+width:250px;
+
+border:none;
+
+border-radius:25px;
+
+outline:none;
+
+font-size:16px;
+
+transition:.4s;
+
+}
+
+.search-box input:focus{
+
+width:320px;
+
+box-shadow:0 0 15px cyan;
+
+}
+@keyframes fadeIn{
+
+from{
+
+opacity:0;
+
+transform:translateY(40px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+</style>
+
+</head>
+<body>
+
+<div id="menu" class="sidebar">
+
+<span class="closebtn" onclick="closeMenu()">&times;</span>
+
+<a href="cricket.html">🏏 Cricket</a>
+<a href="football.html">⚽ Football</a>
+<a href="kabaddi.html">🤼 Kabaddi</a>
+<a href="hockey.html">🏑 Hockey</a>
+<a href="badminton.html">🏸 Badminton</a>
+<a href="tennis.html">🎾 Tennis</a>
+<a href="volleyball.html">🏐 Volleyball</a>
+<a href="athletics.html">🏃 Athletics</a>
+<a href="basketball.html">🏀 Basketball</a>
+<a href="tabletennis.html">🏓 Table Tennis</a>
+<a href="boxing.html">🥊 Boxing</a>
+<a href="chess.html">♟ Chess</a>
+
+</div>
+
+<header>
+
+<div class="menu-btn" onclick="openMenu()">☰</div>
+
+<div class="logo">SPORTS INDIA</div>
+<div class="search-box">
+<input
+type="text"
+id="searchInput"
+placeholder="🔍 Search Sports..."
+onkeyup="searchSports()">
+</div>
+
+</header>
+
+<section class="hero">
+
+<div>
+
+<h1>Welcome to Sports India</h1>
+
+<p>One Destination for Every Indian Sport</p>
+
+</div>
+
+</section>
+
+<div class="container">
+
+<h2 class="title">Popular Sports</h2>
+
+<div class="cards" >
+
+<div class="card"onclick="window.location='cricket.html'"
+style="cursor:pointer;">
+<h2>🏏 Cricket</h2>
+<p>Scores, IPL, Teams & News</p>
+</div>
+
+<div class="card" onclick="window.location='football.html'"
+style="cursor:pointer;">
+<h2>⚽ Football</h2>
+<p>ISL, Premier League & FIFA</p>
+</div>
+
+<div class="card" onclick="window.location='kabaddi.html'"
+style="cursor:pointer;">
+<h2>🤼 Kabaddi</h2>
+<p>Pro Kabaddi League Updates</p>
+</div>
+
+<div class="card" onclick="window.location='hockey.html'"
+style="cursor:pointer;">
+<h2>🏑 Hockey</h2>
+<p>Indian Hockey News</p>
+</div>
+
+<div class="card" onclick="window.location='badminton.html'"
+style="cursor:pointer;">
+<h2>🏸 Badminton</h2>
+<p>BWF Tournaments & Rankings</p>
+</div>
+
+<div class="card"onclick="window.location='tennis.html'"
+style="cursor:pointer;">
+<h2>🎾 Tennis</h2>
+<p>Grand Slam & ATP Updates</p>
+</div>
+
+</div>
+
+</div>
+
+<footer>
+
+© 2026 Sports India | All Rights Reserved
+
+</footer>
+
+<script>
+
+function openMenu(){
+document.getElementById("menu").style.width="260px";
+}
+
+function closeMenu(){
+document.getElementById("menu").style.width="0";
+}
+function searchSports(){
+
+let input=document.getElementById("searchInput").value.toUpperCase();
+
+let cards=document.getElementsByClassName("card");
+
+for(let i=0;i<cards.length;i++){
+
+let text=cards[i].innerText.toUpperCase();
+
+if(text.indexOf(input)>-1){
+
+cards[i].style.display="block";
+
+}else{
+
+cards[i].style.display="none";
+
+}
+
+}
+
+}
+</script>
+
+</body>
+</html>

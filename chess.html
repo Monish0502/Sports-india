@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sports India - Chess</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#111;
+color:white;
+}
+
+header{
+background:linear-gradient(90deg,#000,#444);
+padding:30px;
+text-align:center;
+border-bottom:4px solid gold;
+}
+
+header h1{
+color:gold;
+font-size:40px;
+}
+
+header p{
+margin-top:10px;
+color:#ddd;
+}
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:#fff799;
+    padding:15px 30px;
+}
+
+.nav-links{
+    display:flex;
+    gap:30px;
+}
+
+.container{
+width:90%;
+margin:auto;
+padding:30px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+gap:25px;
+}
+
+.box{
+background:#1c1c1c;
+border:2px solid gold;
+border-radius:12px;
+padding:20px;
+box-shadow:0 0 15px rgba(255,215,0,.3);
+transition:.3s;
+}
+
+.box:hover{
+transform:scale(1.05);
+box-shadow:0 0 25px gold;
+}
+
+.box h2{
+color:gold;
+margin-bottom:15px;
+}
+
+.player{
+padding:8px;
+border-bottom:1px solid #555;
+}
+
+.player:last-child{
+border:none;
+}
+
+.button{
+display:inline-block;
+margin-top:15px;
+padding:10px 20px;
+background:gold;
+color:black;
+text-decoration:none;
+font-weight:bold;
+border-radius:6px;
+}
+
+.button:hover{
+background:orange;
+}
+
+footer{
+margin-top:30px;
+background:#000;
+text-align:center;
+padding:15px;
+color:white;
+}
+/* Reset */
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+img{max-width:100%;height:auto;}
+
+/* Navbar */
+.navbar{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;padding:15px 20px;}
+.logo{font-size:28px;font-weight:bold;color:#8B0000;}
+.nav-links{display:flex;flex-wrap:wrap;justify-content:center;gap:15px;list-style:none;}
+.nav-links a{text-decoration:none;color:#000;padding:10px 15px;border-radius:6px;font-weight:bold;transition:.3s;}
+.nav-links a:hover{background:#8B0000;color:#fff;}
+
+/* Layout */
+header{padding:40px 20px;}
+header h1{font-size:40px;}
+header p{font-size:20px;}
+.container{width:90%;max-width:1200px;margin:auto;}
+.team{padding:20px;margin:25px 0;}
+.team h2{font-size:30px;}
+table{width:100%;display:block;overflow-x:auto;white-space:nowrap;}
+.button{display:inline-block;margin:25px 0;}
+
+/* Tablet */
+@media(max-width:992px){
+header h1{font-size:34px;}
+.team h2{font-size:26px;}
+.nav-links{gap:10px;}
+.nav-links a{padding:8px 12px;}
+}
+
+/* Mobile */
+@media(max-width:768px){
+.navbar{flex-direction:column;text-align:center;}
+.logo{margin-bottom:15px;}
+.nav-links{flex-direction:column;width:100%;}
+.nav-links li,.nav-links a,.button{width:100%;}
+.nav-links a{display:block;}
+header h1{font-size:28px;}
+header p{font-size:16px;}
+.team{padding:15px;}
+.team h2{font-size:22px;}
+table{font-size:14px;}
+.button{text-align:center;}
+}
+
+/* Small Phones */
+@media(max-width:480px){
+.logo{font-size:22px;}
+header h1{font-size:24px;}
+header p{font-size:14px;}
+.team h2{font-size:20px;}
+table{font-size:12px;}
+th,td{padding:8px;}
+}
+</style>
+
+</head>
+
+<body>
+<nav class="navbar">
+    <div class="logo">🏆 Sports India</div>
+
+    <ul class="nav-links">
+        <li><a href="sports.html">Home</a></li>
+        <li><a href="cricket.html">Cricket</a></li>
+        <li><a href="football.html">Football</a></li>
+        <li><a href="kabaddi.html">Kabaddi</a></li>
+        <li><a href="hockey.html">Hockey</a></li>
+        <li><a href="tennis.html">Tennis</a></li>
+		<li><a href="volleyball.html">Volleyball</a></li>
+		<li><a href="chess.html">Chess</a></li>
+		<li><a href="basketball.html">Basketball</a></li>
+		<li><a href="tabletennis.html">Table Tennis</a></li>
+		<li><a href="athletics.html">Athletics</a></li>
+		<li><a href="badminton.html">Badminton</a></li>
+		<li><a href="boxing.html">Boxing</a></li>
+    </ul>
+</nav>
+
+<header>
+
+<h1>♔ CHESS ARENA ♛</h1>
+
+<p>World Champions | Rankings | Grandmasters</p>
+
+</header>
+
+<div class="container">
+
+<div class="box">
+
+<h2>🏆 World Champion</h2>
+
+<p><b>Name:</b> Magnus Carlsen</p>
+
+<p><b>Country:</b> Norway 🇳🇴</p>
+
+<p><b>Rating:</b> 2839</p>
+
+<p><b>Matches Played:</b> 1200+</p>
+
+<p><b>Wins:</b> 720</p>
+
+<p><b>Draws:</b> 390</p>
+
+<p><b>Losses:</b> 90</p>
+
+<a href="#" class="button">View Profile</a>
+
+</div>
+
+<div class="box">
+
+<h2>🌍 Top Grandmasters</h2>
+
+<div class="player">🥇 Magnus Carlsen</div>
+
+<div class="player">🥈 Hikaru Nakamura</div>
+
+<div class="player">🥉 Gukesh Dommaraju</div>
+
+<div class="player">4️⃣ Arjun Erigaisi</div>
+
+<div class="player">5️⃣ Fabiano Caruana</div>
+
+</div>
+
+<div class="box">
+
+<h2>🇮🇳 Indian Chess Stars</h2>
+
+<div class="player">♔ Viswanathan Anand</div>
+
+<div class="player">♕ Gukesh Dommaraju</div>
+
+<div class="player">♖ R. Praggnanandhaa</div>
+
+<div class="player">♗ Arjun Erigaisi</div>
+
+<div class="player">♘ Vidit Gujrathi</div>
+
+</div>
+
+<div class="box">
+
+<h2>♟ Live Tournament</h2>
+
+<p><b>Tournament:</b> World Chess Championship</p>
+
+<p><b>Round:</b> 8</p>
+
+<p><b>Time Control:</b> 90 + 30</p>
+
+<p><b>Status:</b> Live</p>
+
+<p><b>Venue:</b> Singapore</p>
+
+<a href="#" class="button">Watch Match</a>
+
+</div>
+
+</div>
+
+<center>
+
+<a href="sports.html" class="button">⬅ Back to Home</a>
+
+</center>
+
+<footer>
+
+© 2026 Sports India | Chess Arena
+
+</footer>
+
+</body>
+</html>

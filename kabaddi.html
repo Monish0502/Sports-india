@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sports India - Kabaddi</title>
+
+<style>
+
+body{
+    font-family:Arial,sans-serif;
+    margin:0;
+    background:#f4f4f4;
+}
+
+header{
+    background:#8B0000;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:#fff799;
+    padding:15px 30px;
+}
+
+.nav-links{
+    display:flex;
+    gap:30px;
+}
+.container{
+    width:90%;
+    margin:auto;
+    padding:20px;
+}
+
+.team{
+    background:white;
+    padding:20px;
+    margin-bottom:25px;
+    border-radius:10px;
+    box-shadow:0 2px 10px rgba(0,0,0,.2);
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:15px;
+}
+
+th{
+    background:#8B0000;
+    color:white;
+}
+
+th,td{
+    border:1px solid #ddd;
+    padding:10px;
+    text-align:center;
+}
+
+.button{
+    display:inline-block;
+    background:#8B0000;
+    color:white;
+    padding:10px 20px;
+    text-decoration:none;
+    border-radius:5px;
+    margin-top:20px;
+}
+
+.button:hover{
+    background:#600000;
+}
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+/* Universal */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+img{
+    max-width:100%;
+    height:auto;
+}
+
+/* Navigation */
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+    padding:15px 20px;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+    color:#8B0000;
+}
+
+.nav-links{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    list-style:none;
+    gap:15px;
+}
+
+.nav-links li a{
+    text-decoration:none;
+    color:#000;
+    padding:10px 15px;
+    border-radius:6px;
+    transition:.3s;
+    font-weight:bold;
+}
+
+.nav-links li a:hover{
+    background:#8B0000;
+    color:white;
+}
+
+/* Header */
+header{
+    padding:40px 20px;
+}
+
+header h1{
+    font-size:40px;
+}
+
+header p{
+    font-size:20px;
+}
+
+/* Main Container */
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+/* Team Cards */
+.team{
+    padding:20px;
+    margin:25px 0;
+}
+
+.team h2{
+    font-size:30px;
+}
+
+/* Responsive Table */
+table{
+    width:100%;
+    display:block;
+    overflow-x:auto;
+    white-space:nowrap;
+}
+
+/* Button */
+.button{
+    display:inline-block;
+    margin:25px 0;
+}
+
+/* ========== Tablet ========== */
+
+@media(max-width:992px){
+
+header h1{
+    font-size:34px;
+}
+
+.team h2{
+    font-size:26px;
+}
+
+.nav-links{
+    gap:10px;
+}
+
+.nav-links li a{
+    padding:8px 12px;
+}
+
+}
+
+/* ========== Mobile ========== */
+
+@media(max-width:768px){
+
+.navbar{
+    flex-direction:column;
+    text-align:center;
+}
+
+.logo{
+    margin-bottom:15px;
+}
+
+.nav-links{
+    flex-direction:column;
+    width:100%;
+}
+
+.nav-links li{
+    width:100%;
+}
+
+.nav-links li a{
+    display:block;
+    width:100%;
+}
+
+header h1{
+    font-size:28px;
+}
+
+header p{
+    font-size:16px;
+}
+
+.team{
+    padding:15px;
+}
+
+.team h2{
+    font-size:22px;
+}
+
+table{
+    font-size:14px;
+}
+
+.button{
+    width:100%;
+    text-align:center;
+}
+
+}
+
+/* ========== Small Phones ========== */
+
+@media(max-width:480px){
+
+.logo{
+    font-size:22px;
+}
+
+header h1{
+    font-size:24px;
+}
+
+header p{
+    font-size:14px;
+}
+
+.team h2{
+    font-size:20px;
+}
+
+table{
+    font-size:12px;
+}
+
+th,td{
+    padding:8px;
+}
+
+}
+</style>
+
+</head>
+
+<body>
+<nav class="navbar">
+    <div class="logo">🏆 Sports India</div>
+
+    <ul class="nav-links">
+        <li><a href="sports.html">Home</a></li>
+        <li><a href="cricket.html">Cricket</a></li>
+        <li><a href="football.html">Football</a></li>
+        <li><a href="kabaddi.html">Kabaddi</a></li>
+        <li><a href="hockey.html">Hockey</a></li>
+        <li><a href="tennis.html">Tennis</a></li>
+		<li><a href="volleyball.html">Volleyball</a></li>
+		<li><a href="chess.html">Chess</a></li>
+		<li><a href="basketball.html">Basketball</a></li>
+		<li><a href="tabletennis.html">Table Tennis</a></li>
+		<li><a href="athletics.html">Athletics</a></li>
+		<li><a href="badminton.html">Badminton</a></li>
+		<li><a href="boxing.html">Boxing</a></li>
+    </ul>
+</nav>
+
+<header>
+
+<h1>🤼 Pro Kabaddi League</h1>
+
+<p>Top Teams & Players</p>
+
+</header>
+
+<div class="container">
+
+<div class="team">
+
+<h2>🐂 Bengaluru Bulls</h2>
+
+<p><b>Captain:</b> Pardeep Narwal</p>
+<p><b>PKL Titles:</b> 1</p>
+<p><b>Home City:</b> Bengaluru</p>
+
+<table>
+
+<tr>
+<th>Player</th>
+<th>Role</th>
+<th>Matches</th>
+<th>Raid Points</th>
+<th>Tackle Points</th>
+</tr>
+
+<tr>
+<td>Pardeep Narwal</td>
+<td>Raider</td>
+<td>190</td>
+<td>1800+</td>
+<td>20</td>
+</tr>
+
+<tr>
+<td>Saurabh Nandal</td>
+<td>Defender</td>
+<td>120</td>
+<td>15</td>
+<td>310+</td>
+</tr>
+
+<tr>
+<td>Bharat Hooda</td>
+<td>Raider</td>
+<td>80</td>
+<td>500+</td>
+<td>5</td>
+</tr>
+
+</table>
+
+</div>
+
+<div class="team">
+
+<h2>🐯 Jaipur Pink Panthers</h2>
+
+<p><b>Captain:</b> Sunil Kumar</p>
+<p><b>PKL Titles:</b> 2</p>
+<p><b>Home City:</b> Jaipur</p>
+
+<table>
+
+<tr>
+<th>Player</th>
+<th>Role</th>
+<th>Matches</th>
+<th>Raid Points</th>
+<th>Tackle Points</th>
+</tr>
+
+<tr>
+<td>Arjun Deshwal</td>
+<td>Raider</td>
+<td>110</td>
+<td>1000+</td>
+<td>8</td>
+</tr>
+
+<tr>
+<td>Sunil Kumar</td>
+<td>Defender</td>
+<td>160</td>
+<td>20</td>
+<td>450+</td>
+</tr>
+
+<tr>
+<td>Reza Mirbagheri</td>
+<td>Defender</td>
+<td>70</td>
+<td>3</td>
+<td>180+</td>
+</tr>
+
+</table>
+
+</div>
+
+<div class="team">
+
+<h2>🟡 Tamil Thalaivas</h2>
+
+<p><b>Captain:</b> Narender Kandola</p>
+<p><b>Home City:</b> Chennai</p>
+
+<table>
+
+<tr>
+<th>Player</th>
+<th>Role</th>
+<th>Matches</th>
+<th>Raid Points</th>
+<th>Tackle Points</th>
+</tr>
+
+<tr>
+<td>Narender Kandola</td>
+<td>Raider</td>
+<td>90</td>
+<td>650+</td>
+<td>10</td>
+</tr>
+
+<tr>
+<td>Sagar Rathee</td>
+<td>Defender</td>
+<td>100</td>
+<td>5</td>
+<td>280+</td>
+</tr>
+
+<tr>
+<td>Sahil Gulia</td>
+<td>Defender</td>
+<td>95</td>
+<td>2</td>
+<td>250+</td>
+</tr>
+
+</table>
+
+</div>
+
+<a href="sports.html" class="button">⬅ Back to Home</a>
+
+</div>
+
+</body>
+</html>
